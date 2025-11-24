@@ -200,15 +200,15 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.9) 100%);
+    background: radial-gradient(circle at center, rgba(17, 17, 17, 0.7) 0%, rgba(17, 17, 17, 0.95) 100%);
+    backdrop-filter: blur(3px);
     z-index: -1;
 }
 
 .hero-content {
     text-align: center;
     z-index: 2;
-    mix-blend-mode: overlay;
-    /* Cool effect */
+    mix-blend-mode: normal;
 }
 
 .hero-title {
@@ -218,6 +218,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     color: #fff;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .hero-title .highlight {
@@ -405,203 +406,7 @@ h4 {
 .profile-card {
     width: 100%;
     height: 100%;
-    background-image: url('/Banner_image.png');
-    /* Reuse for now, ideally separate image */
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-}
-
-.profile-card:hover {
-    filter: grayscale(0%);
-}
-
-/* Classes */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 4rem;
-}
-
-.card {
-    background: var(--surface);
-    padding: 3rem;
-    border: 1px solid #333;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.card:hover {
-    border-color: var(--primary);
-    transform: translateY(-10px);
-}
-
-.card-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #fff;
-}
-
-.card p {
-    color: var(--text-muted);
-}
-
-/* Feel Section */
-.feel-section {
-    position: relative;
-    background-color: var(--primary);
-    color: var(--secondary);
-    text-align: center;
-    padding: 10rem 0;
-    overflow: hidden;
-}
-
-.parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/Banner_image.png');
-    background-size: cover;
-    opacity: 0.1;
-    z-index: 0;
-}
-
-.relative-z {
-    position: relative;
-    z-index: 1;
-}
-
-.highlight-text {
-    font-size: clamp(3rem, 8vw, 8rem);
-    margin: 2rem 0;
-    line-height: 0.9;
-}
-
-.final-statement {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-/* Footer */
-footer {
-    background-color: #000;
-    padding: 6rem 0;
-    text-align: center;
-}
-
-.footer-logo-text {
-    font-size: 5rem;
-    color: #222;
-    margin-bottom: 2rem;
-    user-select: none;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-
-.footer-links a {
-    color: #fff;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: center;
-}
-
-.grid-layout.reverse {
-    direction: rtl;
-}
-
-.grid-layout.reverse>* {
-    direction: ltr;
-}
-
-.section-title {
-    font-size: clamp(3rem, 5vw, 5rem);
-    margin-bottom: 2rem;
-}
-
-.lead {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    color: var(--text-main);
-}
-
-.text-block p {
-    margin-bottom: 1.5rem;
-    color: var(--text-muted);
-    font-size: 1.1rem;
-}
-
-/* Visual Blocks */
-.visual-block {
-    position: relative;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.abstract-shape {
-    width: 80%;
-    height: 80%;
-    background: linear-gradient(45deg, var(--surface), #222);
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    animation: morph 8s ease-in-out infinite;
-    position: absolute;
-    z-index: 0;
-}
-
-@keyframes morph {
-    0% {
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-
-    100% {
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-}
-
-.floating-text {
-    z-index: 1;
-    font-size: 4rem;
-    text-align: center;
-    line-height: 1;
-    mix-blend-mode: exclusion;
-}
-
-.profile-card {
-    width: 100%;
-    height: 100%;
-    background-image: url('/Banner_image.png');
-    /* Reuse for now, ideally separate image */
+    background-image: url('/squarebannerimage.png');
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
