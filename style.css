@@ -346,6 +346,7 @@ h4 {
 .section-title {
     font-size: clamp(3rem, 5vw, 5rem);
     margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .lead {
@@ -357,8 +358,9 @@ h4 {
 
 .text-block p {
     margin-bottom: 1.5rem;
-    color: var(--text-muted);
+    color: #E0E0E0;
     font-size: 1.1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Visual Blocks */
@@ -503,7 +505,7 @@ footer {
 
 .footer-logo-text {
     font-size: 5rem;
-    color: #222;
+    color: #888;
     margin-bottom: 2rem;
     user-select: none;
 }
@@ -516,14 +518,14 @@ footer {
 }
 
 .footer-links a {
-    color: #fff;
+    color: #E0E0E0;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .copyright {
-    color: #444;
+    color: #888;
     font-size: 0.9rem;
 }
 
